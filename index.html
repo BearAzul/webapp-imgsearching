@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
@@ -15,15 +16,15 @@
   <section id="home">
     <div class="container">
       <div class="wrapper">
-        <div class="title">
+        <div class="title" data-aos="fade-down">
           <h1>SELAMAT DATANG DI,<br>YOUR GALLERY</h1>
         </div>
-        <div class="text-content">
+        <div class="text-content" data-aos="fade-right">
           <h2>😉Cari Gambar Favorit Anda!😉</h2>
           <p>Temukan semua gambar yang anda inginkan, semua akan tersedia di App Kami. Jangan lupa Subscribe untuk
             mendapatkan update gambar yang lebih keren dan anti-mainstream.</p>
         </div>
-        <a href="#allImages" class="startBtn">
+        <a href="#allImages" class="startBtn" data-aos="fade-up">
           <span class="icon"><i class="fa-solid fa-angles-right"></i></span>
           <span class="text">Get Started</span>
         </a>
@@ -41,7 +42,7 @@
   <section id="allImages">
     <div class="container">
       <div class="search-container">
-        <div class="search-wrapper">
+        <div class="search-wrapper" data-aos="fade-down">
           <input type="text" id="search-input" placeholder="Cari gambar...">
           <button id="search-btn" type="button">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -53,7 +54,7 @@
           <button class="category-btn" data-category="city">Kota</button>
           <button class="category-btn" data-category="technology">Teknologi</button>
         </div>
-        <div class="image-container" id="image-container">
+        <div class="image-container" id="image-container" data-aos="fade-up">
           <!-- Tempat menampilkan gambar-gambar dari API's Unplash -->
         </div>
       </div>
@@ -63,18 +64,18 @@
   <!-- Images Section, End -->
 
   <!-- Menu -->
-  <nav id="navbar">
+  <nav id="navbar" data-aos="fade-up">
     <a href="#home"><i class="fa-solid fa-house"></i></a>
     <a href="#allImages"><i class="fa-solid fa-magnifying-glass"></i></a>
     <a href="#footer"><i class="fa-regular fa-bell"></i></a>
   </nav>
-  
+
   <!-- Footer Start -->
-  <footer id="footer">
+  <footer id="footer" data-aos="fade-up">
     <div class="container">
       <div class="footer-content content-1">
         <div class="footer-logo">
-          <img src="logo.png" alt="Logo">
+          <img src="Logo.png" alt="Logo">
           <h3>Your Gallery</h3>
         </div>
         <p>Terima Kasih telah mengunjungi kami. Jangan lupa follow kami.</p>
@@ -106,6 +107,7 @@
   <!-- Footer  -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="app.js"></script>
 </body>
 

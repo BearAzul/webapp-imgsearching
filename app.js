@@ -52,3 +52,10 @@ $(document).ready(function () {
 
   fetchImages("random");
 });
+
+AOS.init();
+
+AOS.init({
+  once: true,
+  duration: 800,
+});
