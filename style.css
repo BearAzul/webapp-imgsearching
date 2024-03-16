@@ -80,6 +80,7 @@ nav a:active i {
   flex-direction: column;
   position: relative;
   background: #E5E0FF;
+  overflow-x: hidden;
 }
 
 #home svg {
@@ -172,6 +173,7 @@ nav a:active i {
 #allImages {
   background: #FFF2F2;
   position: relative;
+  overflow: hidden;
 }
 
 #allImages svg {
@@ -519,7 +521,7 @@ footer .footer-copyright, a {
   }
 
   #home {
-    min-height: 100vh;
+    min-height: 90vh;
   }
 
   #home .container .title h1 {
