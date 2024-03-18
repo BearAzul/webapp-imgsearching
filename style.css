@@ -190,6 +190,12 @@ nav a:active i {
   padding: 10px 0;
 }
 
+#get {
+  text-align: center;
+  margin: 10px 0;
+  font-size: .9rem;
+}
+
 #allImages .search-wrapper {
   display: flex;
   align-items: center;

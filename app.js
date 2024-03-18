@@ -28,6 +28,9 @@ $(document).ready(function () {
           );
         });
       },
+      complete: function () {
+        $("#get").hide();
+      },
       error: function (xhr, status, error) {
         console.error(xhr, status, error);
       },
@@ -36,6 +39,8 @@ $(document).ready(function () {
   // Search Query
   $("#search-btn").click(function () {
     fetchImages($("#search-input").val());
+    
+    $("#get").show();
   });
 
   // Category Query
@@ -45,6 +50,8 @@ $(document).ready(function () {
     $(".category-btn").removeClass("active");
 
     $(this).addClass("active");
+
+    $("#get").show();
 
     switch (category) {
       case "nature":
