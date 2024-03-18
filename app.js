@@ -7,6 +7,16 @@ $(document).ready(function () {
         const images = res.results;
         const imageContainer = $("#image-container");
 
+        if (images.length == 0) {
+          Swal.fire({
+            title: "Apa yang kamu cari?",
+            text: "Masukkan kata kunci gambar dengan benar!",
+            icon: "question",
+          });
+
+          return;
+        }
+
         imageContainer.empty();
 
         images.forEach(function (image) {
@@ -23,11 +33,12 @@ $(document).ready(function () {
       },
     });
   }
-
+  // Search Query
   $("#search-btn").click(function () {
     fetchImages($("#search-input").val());
   });
 
+  // Category Query
   $(".category-btn").click(function () {
     const category = $(this).data("category");
 
@@ -50,6 +61,7 @@ $(document).ready(function () {
     }
   });
 
+  // Tampilkan Gambar Awal
   fetchImages("random");
 });
 
